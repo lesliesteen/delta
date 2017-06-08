@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+    <html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <title>Delta</title>
+        
+        <style type="text/css"> 
+            .letterswap{
+                padding:15px;
+                font-size:480px;
+            }
+            
+        a {
+                text-decoration: none;            
+                color: black;
+                padding: 40px;
+                }
+            
+            a:hover {
+            text-decoration: underline;
+                }    
+            
+        input {
+ border: none;
+ background: none;
+font-size: 25px;
+padding: 11px;
+}    
+p {
+  font-family: 'Helvetica';
+    position: fixed;
+    right: 1%;
+    bottom: 0%;
+    color: lightgrey;
+}                     
+            
+        @font-face { font-family: Delta Two; src: url('Delta Two 4.otf'); }
+        @font-face { font-family: Delta Four; src: url('Delta Four 6.otf'); }
+        @font-face { font-family: Delta Six; src: url('Delta Six 6.otf'); }
+            
+        </style> 
+        
+    </head>
+
+<body>
+
+
+<span id="print1" class="letterswap" onclick="nextElement1();">d</span>
+<span id="print2" class="letterswap" onclick="nextElement2();">e</span>
+<span id="print3" class="letterswap" onclick="nextElement3();">l</span>
+<span id="print4" class="letterswap" onclick="nextElement4();">t</span>
+<span id="print5" class="letterswap" onclick="nextElement5();">a</span>
+
+ 
+ <script type="text/javascript">
+    var myArray = ["Delta Two", "Delta Four", "Delta Six"];
+    var myIndex = 1;
+            
+    document.getElementById('print1').style.fontFamily = myArray[0];
+    document.getElementById('print2').style.fontFamily = myArray[0];
+    document.getElementById('print3').style.fontFamily = myArray[0];
+    document.getElementById('print4').style.fontFamily = myArray[0];
+    document.getElementById('print5').style.fontFamily = myArray[0];
+   
+            
+    function nextElement1() {
+     document.getElementById('print1').style.fontFamily = myArray[myIndex]; 
+        myIndex = (myIndex + 1) % (myArray.length);
+    }
+    
+    function nextElement2() {
+     document.getElementById('print2').style.fontFamily = myArray[myIndex]; 
+        myIndex = (myIndex + 1) % (myArray.length);
+    }
+    
+    function nextElement3() {
+     document.getElementById('print3').style.fontFamily = myArray[myIndex]; 
+        myIndex = (myIndex + 1) % (myArray.length);
+    }
+    
+    function nextElement4() {
+     document.getElementById('print4').style.fontFamily = myArray[myIndex]; 
+        myIndex = (myIndex + 1) % (myArray.length);
+    }
+    
+    function nextElement5() {
+     document.getElementById('print5').style.fontFamily = myArray[myIndex]; 
+        myIndex = (myIndex + 1) % (myArray.length);
+    }
+    
+</script>
+    <br>
+<a href="kapitalen.html" style="font-family: 'Delta Two'; font-size: 30px; position:fixed; bottom: 700px; right: 0px;">UPPER CASE</a>        
+
+<script>document.fgColor = 'black'; </script>
+ <div style="display: inline-block;"> <form name="test" method="post">
+<table style="width:100%; text-align: left; bottom: 70px; right: 30px; line-height: 20px;">
+<th style="font-family: 'Delta Two'; font-size: 30px;padding: 5px;text-align:center; color:black">typeface</th>     
+<tr> <th><input type="button"
+     OnClick="document.fgColor = '#0000FF';"
+       value="blue" style="font-family: 'Delta Two'; color: #0000FF">
+
+<input type="button"
+     OnClick="document.fgColor = '#00FFFF';"
+       value="cyan" style="font-family: 'Delta Four'; color: cyan;">
+
+  <input type="button"
+     OnClick="document.fgColor = '#FF00FF';"
+       value="magenta" style="font-family: 'Delta Six'; color: magenta"></th>
+</tr>
+<tr> <th><input type="button"
+     OnClick="document.fgColor = '#FFFF00';"
+       value="yellow" style="font-family: 'Delta Two'; color: yellow">
+     
+<input type="button"
+     OnClick="document.fgColor = '#000000';"
+       value="black" style="font-family: 'Delta Four'; color: black">
+     
+<input type="button"
+     OnClick="document.fgColor = '#00FF00';"
+       value="green" style="font-family: 'Delta Six'; color: #00FF00"> </th></tr>
+     
+<tr><th><input type="button"
+     OnClick="document.fgColor = '#FF8D33';"
+       value="orange" style="font-family: 'Delta Two'; color: #FF8D33"> 
+     
+<input type="button"
+     OnClick="document.fgColor = '#FF3333';"
+       value="red" style="font-family: 'Delta Four'; color: #FF3333">
+
+<input type="button"
+     OnClick="document.fgColor = '#AF33FF';"
+       value="purple" style="font-family: 'Delta Six'; color: #AF33FF"> 
+         
+    
+    </th> </tr>
+     
+     </table>
+     
+    </form>
+    </div>
+<script>document.bgColor = 'white'; </script>
+ <div style="display: inline-block; padding-left:100px;"><form name="test" method="post">
+<table style="width:100%; text-align: center; bottom: 70px; right: 30px; line-height: 20px;">
+<th style="font-family: 'Delta Two'; font-size: 30px;padding: 5px;text-align:center; color:black">background</th>          
+<tr> <th><input type="button"
+     OnClick="document.bgColor = '#0000FF';"
+       value="blue" style="font-family: 'Delta Two'; color: #0000FF">
+
+<input type="button"
+     OnClick="document.bgColor = '#00FFFF';"
+       value="cyan" style="font-family: 'Delta Four'; color: cyan;">
+
+  <input type="button"
+     OnClick="document.bgColor = '#FF00FF';"
+       value="magenta" style="font-family: 'Delta Six'; color: magenta"></th>
+</tr>
+<tr> <th><input type="button"
+     OnClick="document.bgColor = '#FFFF00';"
+       value="yellow" style="font-family: 'Delta Two'; color: yellow">
+     
+<input type="button"
+     OnClick="document.bgColor = '#FFFFFF';"
+       value="white" style="font-family: 'Delta Four'; color: white">
+     
+<input type="button"
+     OnClick="document.bgColor = '#00FF00';"
+       value="green" style="font-family: 'Delta Six'; color: #00FF00"> </th></tr>
+     
+<tr><th><input type="button"
+     OnClick="document.bgColor = '#FF8D33';"
+       value="orange" style="font-family: 'Delta Two'; color: #FF8D33"> 
+     
+<input type="button"
+     OnClick="document.bgColor = '#FF3333';"
+       value="red" style="font-family: 'Delta Four'; color: #FF3333">
+
+<input type="button"
+     OnClick="document.bgColor = '#AF33FF';"
+       value="purple" style="font-family: 'Delta Six'; color: #AF33FF"> 
+         
+    
+    </th> </tr>
+     
+     </table>
+     
+    </form>    
+    </div>
+    <div style="display: inline-block;"><span title="Click me!" style="font-family: 'Delta Two';position: fixed;color:black; bottom: 40px; font-size: 60px; width: 600px; padding-left:90px;">Click the characters above to see all fonts.</span></div>
+ <p>&#9400; Leslie Steen</p>
+
+</body>
+
+</html>
